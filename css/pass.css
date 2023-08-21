@@ -90,6 +90,10 @@
     margin: 170px 0 10px 0;
     color: black;
     opacity: 60%;
+    display: flex;
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-weight: bolder;
 }
 
 #numGrid {
@@ -103,7 +107,7 @@
     grid-template-rows: minmax(20px) repeat(5, 50px);
 }
 
-#numGrid>button {
+.numbers{
     cursor: pointer;
     width: 62px;
     height: 62px;
@@ -116,6 +120,14 @@
     opacity: 60%;
     /* outline: none; */
     /* background-color: rgba(255, 255, 255, .75); */
+}
+
+#delete{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 25px;
+    visibility: hidden;
 }
 
 #numGrid>button:hover {
